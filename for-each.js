@@ -17,9 +17,13 @@ Output:
 */
 
 export function makeArrayOfNames(arr) {
-    return [];
+    let pet = '';
+    arr.forEach(name => 
+        pet = (name));
+    
+    return pet.name;
 }
-
+//this needs to be able to take the name and type of the animal and...return it in the test when someone puts the array in..
 /*
 Output:
 
