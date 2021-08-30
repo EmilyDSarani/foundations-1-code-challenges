@@ -52,9 +52,9 @@
 */
 
 export function getAllDairy(arr) {
-    
-    const gotMilk = arr.filter(milk => milk.dairy === 'd'); 
-    return gotMilk;
+    const newArray = arr.filter(milk => milk.price > 3); 
+
+    return newArray;
 }
 
 /*
