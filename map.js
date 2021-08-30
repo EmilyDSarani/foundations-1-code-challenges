@@ -34,7 +34,7 @@ Output:
 ]*/
 
 export function makeArrayWithIsHungry(arr) {
-    const newArray = arr.map(pet => ({name: pet.name, isHungry: true, type: pet.type}));
+    const newArray = arr.map(pet => ({ name: pet.name, isHungry: true, type: pet.type }));
     return newArray;
 }
 
@@ -89,5 +89,6 @@ Output:
 */
 
 export function makeArrayOfArraysOfArrays(arr) {
-    return [];
+    const newArray = arr.map(pet => ([{ name: pet.name }], [{ type:pet.type }]));
+    return newArray;
 }
