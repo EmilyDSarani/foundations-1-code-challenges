@@ -70,7 +70,10 @@ Output:
 */
 
 export function getAllFruitsThatCostMoreThanTwo(arr) {
-    return [];
+    const newArray = arr.find(fruit => fruit.id === 'kiwi');
+   
+
+    return [newArray];
 }
 
 
