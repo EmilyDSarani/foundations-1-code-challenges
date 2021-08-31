@@ -99,5 +99,6 @@ Output:
 */
 
 export function listNamesOfAllFruits(arr) {
-    return [];
+    const newArray = arr.find(fruit => fruit.category === 'fruit');
+    return newArray;
 }
