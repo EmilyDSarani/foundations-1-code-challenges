@@ -17,14 +17,13 @@ Output:
 */
 
 export function makeArrayOfNames(arr) {
-    let name = '';
-    const newArr = arr.forEach((animalName) => {
-        animalName = name + animalName.name; 
-    });
-
-    
-    return newArr;
+    const newArray = [];
+    arr.forEach(pets => newArray.push(pets.name)
+    );
+    return newArray;
 }
+
+
 //this needs to be able to take the name and type of the animal and...return it in the test when someone puts the array in..
 /*
 Output:
@@ -33,7 +32,10 @@ Output:
 */
 
 export function makeReversedArrayOfTypes(arr) {
-    return [];
+    const newArray = [];
+    arr.forEach(pets => newArray.push(pets.type)
+    );
+    return newArray.reverse();
 }
 
 /*
