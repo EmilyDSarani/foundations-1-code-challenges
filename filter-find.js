@@ -52,9 +52,9 @@
 */
 
 export function getAllDairy(arr) {
-    
-    const gotMilk = arr.filter(milk => milk.dairy === 'd'); 
-    return gotMilk;
+    const newArray = arr.filter(milk => milk.price > 3); 
+
+    return newArray;
 }
 
 /*
@@ -70,7 +70,10 @@ Output:
 */
 
 export function getAllFruitsThatCostMoreThanTwo(arr) {
-    return [];
+    const newArray = arr.find(fruit => fruit.id === 'kiwi');
+   
+
+    return [newArray];
 }
 
 
@@ -85,7 +88,8 @@ Output:
 */
 
 export function findTheCheese(arr) {
-    return [];
+    const newArray = arr.find(cheesie => cheesie.id === 'cheese');
+    return newArray;
 }
 
 
@@ -95,5 +99,6 @@ Output:
 */
 
 export function listNamesOfAllFruits(arr) {
-    return [];
+    const newArray = arr.find(fruit => fruit.category === 'fruit');
+    return newArray;
 }
